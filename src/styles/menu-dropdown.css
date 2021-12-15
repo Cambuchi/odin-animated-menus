@@ -1,0 +1,97 @@
+
+/*////////////////////////*/
+ /* CSS FOR DROPDOWN MENU */
+ /*////////////////////////*/
+
+ /* .menu {
+
+} */
+
+.menu-button {
+  border-left: none;
+  border-right: none;
+  color: #eaebeb;
+  border-bottom: 10px solid #383838;
+  border-top: 10px solid #383838;
+}
+
+.menu-button:hover, .menu-button:active {
+  color: #00ffbf;
+  border-bottom: 10px solid #00ffbf;
+}
+
+.highlight-button {
+  border-top: 15px solid #383838 !important;
+  border-bottom: 15px solid #00ffbf !important;
+}
+
+/* .menu-button-text {
+
+}
+
+.menu-container {
+  
+} */
+
+.animate {
+  animation: clipY 300ms ease-in-out 0s 1 normal forwards;
+}
+
+.reverse {
+  animation: clipYreverse 300ms ease-in-out 0s 1 normal forwards;
+}
+
+.menu-item {
+  color: #eaebeb;
+  border: 1px solid #00ffbf;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.menu-item:hover {
+  color: #00ffbf;
+}
+
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  
+  80% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes clipY {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes clipYreverse {
+  0% {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+
+  100% {
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+  }
+}
+
+/*////////////////////////*/
+ /* CSS FOR DROPDOWN MENU */
+ /*////////////////////////*/

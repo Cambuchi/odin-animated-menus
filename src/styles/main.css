@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Basement-Grotesque';
+  src: url(../fonts/BasementGrotesque-Black_v1.202.otf) format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron-Light';
+  src: url(../fonts/Aileron-Light.otf) format('opentype');
+  font-style: normal;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#carousel-wrapper {
+  margin-top:10vh;
+  width: 100vw;
+}
+
+#content {
+  margin-top:5vh;
+}
+
+#header {
+  z-index: 10;
+}
